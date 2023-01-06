@@ -1,0 +1,78 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, Menus;
+
+type
+  TForm1 = class(TForm)
+    MainMenu1: TMainMenu;
+    Play1: TMenuItem;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    PaintBox1: TPaintBox;
+    procedure FormCreate(Sender: TObject);
+    procedure Play1Click(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+      procedure Drawpole;
+  procedure CreatePole(var pole:Tpole);
+
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+   pole:Tpole;   i,j,dx,dy:word;   
+  Bitmap : TBitmap;
+
+
+implementation
+
+{$R *.dfm}
+    procedure Tform1.Drawpole;
+ var x,y,i,j:integer;
+    begin
+    dx:=Paintbox1.Width div 3;
+    dy:=PaintBox1.Height div 3;
+    with Paintbox1.Canvas do
+    begin
+    pen.Color:=clRed;
+    for i:=1 to 3 do
+    for j:=1 to 3 do
+    begin
+     x:=(j-1)*dx;
+     y:=(i-1)*dy;
+     rectangle(x,y,x+dx,y+dy);
+     end;
+    end;
+    end;
+
+ procedure TForm1.CreatePole(var pole:Tpole);
+ begin
+  for i:=1 to 3 do
+        for j:=1 to 3 do
+         pole[i,j]:=0;
+         end;
+
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+           Createpole(pole);
+     Bitmap := TBitmap.create;
+Bitmap.LoadFromFile('bitmap1.bmp');
+Bitmap.Transparent:=true;
+
+
+end;
+
+procedure TForm1.Play1Click(Sender: TObject);
+begin
+ Drawpole;
+end;
+
+end.

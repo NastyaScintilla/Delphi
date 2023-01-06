@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016.04.14 15:56:12.084.pas,C:\Users\balykina\Documents\RAD Studio\Projects\Unit2.pas=G:\Delphi\проект\Unit2.pas</Transaction>
+    <Transaction>2016.04.14 15:56:12.084.dfm,C:\Users\balykina\Documents\RAD Studio\Projects\Unit2.dfm=G:\Delphi\проект\Unit2.dfm</Transaction>
+    <Transaction>2016.04.14 15:56:13.342.pas,C:\Users\balykina\Documents\RAD Studio\Projects\Unit3.pas=G:\Delphi\проект\Unit3.pas</Transaction>
+    <Transaction>2016.04.14 15:56:13.342.dfm,C:\Users\balykina\Documents\RAD Studio\Projects\Unit3.dfm=G:\Delphi\проект\Unit3.dfm</Transaction>
+    <Transaction>2016.04.14 15:56:14.314.pas,C:\Users\balykina\Documents\RAD Studio\Projects\Unit1.pas=G:\Delphi\проект\Unit1.pas</Transaction>
+    <Transaction>2016.04.14 15:56:14.314.dfm,C:\Users\balykina\Documents\RAD Studio\Projects\Unit1.dfm=G:\Delphi\проект\Unit1.dfm</Transaction>
+    <Transaction>2016.04.14 15:56:15.429.dproj,C:\Users\balykina\Documents\RAD Studio\Projects\Project1.dproj=G:\Delphi\проект\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
